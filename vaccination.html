@@ -64,7 +64,6 @@
   </div>
 
   <script>
-    // Calendar Variables and Initialization
     const calendar = document.querySelector('.calendar');
     const date = document.querySelector('.date');
     const daysContainer = document.querySelector('.days');
@@ -139,12 +138,11 @@
         day.addEventListener('click', (e) => {
           const clickedDay = Number(e.target.innerHTML);
           activeDay = clickedDay;
-          e.target.classList.add('active');
+        //   e.target.classList.add('active');
         });
       });
     }
 
-    // Vaccine Schedule Calculation and Display
     const deliveryDateInput = document.getElementById('delivery-date');
     const vaccineScheduleContainer = document.querySelector('.schedule');
 
@@ -164,7 +162,7 @@
         { title: 'OPV-3, Pentavalent-3, fIPV-2, RVV-3, PCV-2', date: addDays(deliveryDate, 98), details: '14 Weeks', color: 'fourteen-weeks' },
         { title: 'MR-1, JE-1, PCV-Booster', date: addDays(deliveryDate, 274), details: '9-12 Months', color: 'nine-twelve-months' },
         { title: 'MR-2, JE-2, DPT-Booster-1, OPV-Booster', date: addDays(deliveryDate, 487), details: '16-24 Months', color: 'sixteen-twentyfour-months' },
-        { title: 'DPT-Booster-2', date: addDays(deliveryDate, 1825), details: '5-6 Years', color: 'five-six-years' },
+        { title: 'DPT-Booster-2 Vaccine', date: addDays(deliveryDate, 1825), details: '5-6 Years', color: 'five-six-years' },
         { title: 'Td (Tetanus, adult Diphtheria)', date: addDays(deliveryDate, 3650), details: '10 Years', color: 'ten-years' },
         { title: 'Td (Tetanus, adult Diptheria)', date: addDays(deliveryDate, 5840), details: '16 Years', color: 'sixteen-years' },
         { title: 'Td-1, Td-2 or Td-Booster', date: addDays(deliveryDate, 0), details: 'Pregnant Mother', color: 'pregnant-mother' },

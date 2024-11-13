@@ -7,7 +7,6 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  /* nice scroll bar */
   ::-webkit-scrollbar {
     width: 5px;
   }
@@ -57,7 +56,6 @@
     border-radius: 5px;
     background-color: #fff;
   }
-  /* set after behind the main element */
   .calendar::before,
   .calendar::after {
     content: "";
@@ -553,9 +551,9 @@
   }
   
   .schedule {
-      max-height: 600px; /* Adjust height as needed */
+      max-height: 600px; 
       overflow-y: auto;
-      padding-right: 10px; /* Add padding for scrollbar space */
+      padding-right: 10px; 
   }
   
   .day {
@@ -617,3 +615,7 @@
     height: 15px;
     border-radius: 3px;
   }
+
+.event-title .active{
+    font-size: 0.5rem;
+}
